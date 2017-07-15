@@ -1,0 +1,55 @@
+.action{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px;
+}
+.action label{
+  display: inline-block;
+  margin-right: 3rem;  
+ 
+}
+.action label i{
+  
+}
+
+#canvas{
+  background: #fff;
+  display: block;
+}
+body{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.icon1{
+  font-size: 2.5rem;
+  color: orange;
+  margin-left: 30px;
+}
+.icon2{
+  padding-top: 3px;
+  font-size: 2.5rem;
+  color: red;
+}
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"]:checked ~.icon1{
+  font-size: 3rem;
+  color: green;
+}
+input[type="radio"]:checked ~.icon2{
+  color: green;
+   font-size: 3rem;
+}
+.icon3{
+  cursor: pointer;
+  font-size: 2rem;
+  color: green;
+}
+.icon4{
+  font-size: 2rem;
+  
+}
