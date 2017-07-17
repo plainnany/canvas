@@ -17,10 +17,10 @@ canvas.addEventListener('touchmove',function(e){
     var pageY=e.touches[0].pageY
 
     if(pen==='pen1'){
-        
+
         if(previousPiont){ 
            context.strokeStyle='green'
-           context.lineWidth=8
+           context.lineWidth=4
            context.beginPath()
            context.moveTo(previousPiont.pageX,previousPiont.pageY)
            context.lineTo(pageX,pageY)
@@ -30,7 +30,7 @@ canvas.addEventListener('touchmove',function(e){
     }else if(pen==='pen2'){
         if(previousPiont){ 
             context.strokeStyle='green'
-            context.lineWidth=15
+            context.lineWidth=8
             context.beginPath()
             context.moveTo(previousPiont.pageX,previousPiont.pageY)
             context.lineTo(pageX,pageY)
