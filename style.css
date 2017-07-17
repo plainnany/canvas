@@ -7,11 +7,12 @@
 }
 .action label{
   display: inline-block;
-  margin-right: 3rem;  
+  width: 17%;
+  text-align: center;
  
 }
-.action label i{
-  
+.action i{
+  font-size: 0.85rem;
 }
 
 #canvas{
@@ -24,32 +25,23 @@ body{
   padding: 0;
 }
 .icon1{
-  font-size: 2.5rem;
-  color: orange;
-  margin-left: 30px;
+  color: green;
 }
-.icon2{
-  padding-top: 3px;
-  font-size: 2.5rem;
+.eraser{
   color: red;
 }
 input[type="radio"]{
   display: none;
 }
-input[type="radio"]:checked ~.icon1{
-  font-size: 3rem;
+
+input:checked ~ .iconfont{
+    font-size: 1.25rem; 
+}
+input:checked ~ .iconfont.icon2{
+  font-weight: bold;
   color: green;
 }
-input[type="radio"]:checked ~.icon2{
-  color: green;
-   font-size: 3rem;
-}
-.icon3{
+.clearall{
   cursor: pointer;
-  font-size: 2rem;
   color: green;
-}
-.icon4{
-  font-size: 2rem;
-  
 }
