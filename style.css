@@ -35,11 +35,12 @@ input[type="radio"]{
 }
 
 input:checked ~ .iconfont{
-    font-size: 1.25rem; 
+    /* font-size: 1.25rem;  */
+    font-weight: bold;
 }
 input:checked ~ .iconfont.icon2{
   font-weight: bold;
-  color: green;
+  /* color: green; */
 }
 .clearall{
   cursor: pointer;

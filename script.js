@@ -6,7 +6,8 @@ var context=canvas.getContext('2d')
 var previousPiont
 
 canvas.width=document.documentElement.clientWidth
-canvas.height=document.documentElement.clientHeight-158
+canvas.height=document.documentElement.clientHeight-140
+
 
 canvas.addEventListener('touchmove',function(e){
     e.preventDefault()
