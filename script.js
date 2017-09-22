@@ -50,12 +50,20 @@ canvas.addEventListener('touchend', function(){
 })
 
 save.onclick = function(){
-    var canvas=document.getElementById("canvas");
-    var data=canvas.toDataURL("image/png");
-    var newWindow=window.open('about:blank','image from canvas');
-    newWindow.document.write("<img src='"+data+"' alt='from canvas'/>");
+    var canvas=document.getElementById("canvas")
+    var data=canvas.toDataURL("image/png")
+    var newWindow=window.open('about:blank','image from canvas')
+    newWindow.document.write("<img src='"+data+"' alt='from canvas'/>")
 }
 
 clearAll.onclick=function(){
     context.clearRect(0,0,canvas.width,canvas.height)
+}
+
+if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+    window.location.href ="index.html"
+} else if (/(Android)/i.test(navigator.userAgent)) {
+    window.location.href ="index.html"
+} else {
+    window.location.href ="qrcode.html"
 }
